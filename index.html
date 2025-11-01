@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Exemplo — Missão, Projetos e Transparência</title>
+  <meta name="description" content="ONG Mateus Branquis (Experiência Prática Front-End) — projetos sociais, voluntariado e captação de recursos. Conheça nossa missão, participe e doe.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- LOGO DA ONG -->
+        <img src="assets/images/favicon.ico" alt="Logo da ONG" class="logo" style="width: 50px; height: 50px;">
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Quero Ajudar</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- IMAGEM HERO -->
+      <img src="assets/images/hero.jpg" alt="Voluntários de camisa azul em um projeto social" class="hero-img" style="width:100%; max-width:600px; border-radius:10px;">
+      
+      <h1 id="hero-title">Transformando vidas através de projetos sociais</h1>
+      <p class="lead">Nossa missão é promover educação e bem-estar em comunidades locais. Conheça nossos projetos e participe.</p>
+      <p>
+        <a class="btn" href="projetos.html">Ver projetos</a>
+        <a class="btn outline" href="cadastro.html">Quero ajudar</a>
+      </p>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Missão, visão e valores</h2>
+      <p><strong>Missão:</strong> promover inclusão social por meio de educação, saúde e geração de renda.</p>
+      <p><strong>Visão:</strong> ser referência local em impacto social até 2030.</p>
+      <p><strong>Valores:</strong> transparência, respeito e parceria.</p>
+    </section>
+
+    <section class="highlights" aria-labelledby="impactos-title">
+      <h2 id="impactos-title">Nossos impactos</h2>
+      <ul class="grid-cards">
+        <li class="card"><strong>1200+</strong><span>Beneficiados</span></li>
+        <li class="card"><strong>35</strong><span>Projetos concluídos</span></li>
+        <li class="card"><strong>480</strong><span>Voluntários</span></li>
+      </ul>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Destaque de projeto</h2>
+      <!-- IMAGEM DO PROJETO -->
+      <img src="assets/images/projeto-1.jpg" alt="Projeto social em ação" class="project-img" style="width:100%; max-width:600px; border-radius:10px;">
+      <p>Um dos nossos principais projetos de educação infantil está transformando o futuro de mais de 200 crianças na comunidade Vila Nova.</p>
+    </section>
+
+    <section id="contato" aria-labelledby="contato-title">
+      <h2 id="contato-title">Contato</h2>
+      <address>
+        <p>Rua Hildo Novaes, 640 — Vila Nova — Joinville - SC</p>
+        <p>Telefone: <a href="tel:+5547992699995">(47) 99269-9995</a></p>
+        <p>Email: <a href="mailto:mateus.branquis@cs.up.edu.br">mateus.branquis@cs.up.edu.br</a></p>
+      </address>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <nav aria-label="Rodapé">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastrar</a></li>
+        </ul>
+      </nav>
+      <p>&copy; <span id="year"></span> ONG Exemplo — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

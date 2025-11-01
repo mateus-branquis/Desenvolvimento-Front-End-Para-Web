@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projetos — ONG Exemplo</title>
+  <meta name="description" content="Conheça os projetos sociais da ONG Exemplo — oportunidades de voluntariado e formas de doação.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header bg-green-600 text-white">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">ONG Exemplo</h1>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="flex gap-4">
+          <li><a class="hover:underline" href="index.html">Início</a></li>
+          <li><a class="hover:underline" href="projetos.html">Projetos</a></li>
+          <li><a class="hover:underline" href="cadastro.html">Quero Ajudar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container mx-auto my-8 px-4" role="main">
+
+    <!-- Seção Projetos em destaque -->
+    <section id="projetos" class="py-12 px-6 bg-gray-50">
+      <h2 class="text-2xl font-bold mb-8 text-gray-900">Projetos em destaque</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <img src="assets/images/criancas.png" alt="Crianças em aula" class="rounded-xl mb-4 w-full h-48 object-cover">
+          <h3 class="text-lg font-semibold mb-2">Reforma da Creche Jardim Feliz</h3>
+          <p class="text-gray-600 mb-4">Melhorias de infraestrutura para atender 120 crianças com segurança.</p>
+          <p class="font-semibold mb-4">Arrecadado: R$12.000 / Meta: R$50.000</p>
+          <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Me inscrever</button>
+          <button class="bg-white border border-green-500 text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg ml-2">Doar</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <img src="assets/images/equipe.jpeg" alt="Equipe de saúde em ação" class="rounded-xl mb-4 w-full h-48 object-cover">
+          <h3 class="text-lg font-semibold mb-2">Campanha de Saúde Comunitária</h3>
+          <p class="text-gray-600 mb-4">Levar atendimento básico e campanhas de prevenção em áreas rurais.</p>
+          <p class="font-semibold mb-4">Arrecadado: R$9.000 / Meta: R$15.000</p>
+          <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">Me inscrever</button>
+          <button class="bg-white border border-green-500 text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg ml-2">Doar</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seção de Doações -->
+    <section id="donate" aria-labelledby="donate-title" class="mt-12">
+      <h2 id="donate-title" class="text-2xl font-bold mb-4">Doações</h2>
+      <p class="mb-4">Na entrega 2 você pode implementar integração real; por enquanto, use formulário simulado com confirmação.</p>
+      <form id="donationForm" aria-describedby="donation-desc" class="space-y-4">
+        <p id="donation-desc">Valores sugeridos:</p>
+        <div class="flex gap-4">
+          <label><input type="radio" name="value" value="50"> R$50</label>
+          <label><input type="radio" name="value" value="100" checked> R$100</label>
+          <label><input type="radio" name="value" value="200"> R$200</label>
+          <label>Outro: <input type="number" name="customValue" min="1" step="1" inputmode="numeric" class="border rounded px-2 py-1"></label>
+        </div>
+        <div>
+          <label for="donorName" class="block mb-1">Nome</label>
+          <input id="donorName" name="donorName" required class="border rounded w-full px-3 py-2">
+        </div>
+        <div>
+          <label for="donorEmail" class="block mb-1">Email</label>
+          <input id="donorEmail" name="donorEmail" type="email" required class="border rounded w-full px-3 py-2">
+        </div>
+        <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg" type="submit">Simular Doação</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer bg-gray-800 text-white py-4 mt-12">
+    <div class="container mx-auto text-center">
+      <p>&copy; <span id="year2"></span> ONG Exemplo</p>
+    </div>
+  </footer>
+
+  <script>
+    // Atualiza o ano automaticamente no footer
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cadastro — ONG Exemplo (Voluntário / Doador)</title>
+  <meta name="description" content="Formulário de cadastro para voluntários e doadores — ONG Exemplo.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="brand">ONG Exemplo</h1>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <h2>Formulário de Cadastro</h2>
+    <p id="form-desc">Preencha seus dados para se candidatar como voluntário ou apoiar como doador. Campos obrigatórios marcados com *</p>
+
+    <form id="signupForm" novalidate>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <label for="fullName">Nome completo *</label>
+        <input id="fullName" name="fullName" type="text" required minlength="3" aria-required="true">
+
+        <label for="email">E-mail *</label>
+        <input id="email" name="email" type="email" required aria-required="true" placeholder="exemplo@provedor.com">
+
+        <label for="cpf">CPF *</label>
+        <input id="cpf" name="cpf" type="text" inputmode="numeric" required placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" aria-describedby="cpfHelp">
+        <small id="cpfHelp">Formato: 000.000.000-00</small>
+
+        <label for="phone">Telefone *</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" required placeholder="(00) 90000-0000" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}">
+
+        <label for="birth">Data de nascimento *</label>
+        <input id="birth" name="birth" type="date" required max="2007-12-31">
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="cep">CEP *</label>
+        <input id="cep" name="cep" type="text" inputmode="numeric" required placeholder="00000-000" pattern="\d{5}-\d{3}">
+
+        <label for="address">Endereço *</label>
+        <input id="address" name="address" type="text" required>
+
+        <label for="city">Cidade *</label>
+        <input id="city" name="city" type="text" required>
+
+        <label for="state">Estado *</label>
+        <select id="state" name="state" required>
+          <option value="">Selecione</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <option value="MG">MG</option>
+          <!-- completar conforme necessidade -->
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Interesse</legend>
+        <label><input type="checkbox" name="role" value="voluntario"> Quero ser voluntário</label>
+        <label><input type="checkbox" name="role" value="doador"> Quero contribuir financeiramente</label>
+        <label><input type="checkbox" name="role" value="parceiro"> Interesse em parceria institucional</label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Enviar cadastro</button>
+        <button class="btn outline" type="reset">Limpar</button>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; ONG Exemplo</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
